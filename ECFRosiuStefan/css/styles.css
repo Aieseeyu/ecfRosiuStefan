@@ -1,0 +1,96 @@
+/* ====== GLOBAL ====== */
+body {
+  background: #f6f7fb;
+  font-family: system-ui, -apple-system, Segoe UI, sans-serif;
+}
+
+/* ====== NAVBAR ====== */
+.app-navbar {
+  background: linear-gradient(90deg, #4c8c82, #70b2a6);
+  padding: 0.6rem 1rem;
+  border-bottom: 2px solid #3c7c74;
+}
+.app-navbar .nav-link {
+  color: #fff;
+  font-weight: 500;
+  border-radius: 30px;
+  transition: background 0.2s ease-in-out;
+}
+.app-navbar .nav-link.active {
+  background: rgba(255, 255, 255, 0.25);
+}
+.app-navbar .nav-link:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* ====== PANELS ====== */
+.section-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #4c8c82;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.panel {
+  background: #fff;
+  border: 1px solid #dfe6e9;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+/* ====== TABLE/LIST STYLE ====== */
+.card-slab .row {
+  padding: 0.8rem 0.6rem;
+  border-bottom: 1px solid #eaeaea;
+}
+.card-slab .row:last-child {
+  border-bottom: none;
+}
+.card-slab .row:nth-child(odd) {
+  background: #f8f9fa;
+}
+
+/* ====== BUTTONS ====== */
+.btn-add {
+  background: #27ae60;
+  color: #fff;
+  font-weight: 500;
+  border-radius: 30px;
+  padding: 0.3rem 1.2rem;
+}
+.btn-add:hover {
+  background: #219150;
+}
+
+.btn-del {
+  background: #e74c3c;
+  color: #fff;
+  font-weight: 500;
+  border-radius: 30px;
+  padding: 0.3rem 1.2rem;
+}
+.btn-del:hover {
+  background: #c0392b;
+}
+
+.btn-edit {
+  background: #4d8df6;
+  color: #fff;
+  border-radius: 20px;
+  padding: 0.25rem 0.9rem;
+}
+.btn-edit:hover {
+  background: #3775da;
+}
+
+/* ====== FORM ====== */
+form .form-control {
+  border-radius: 8px;
+  border: 1px solid #ced4da;
+}
+form button[type="submit"] {
+  margin-top: 0.4rem;
+}

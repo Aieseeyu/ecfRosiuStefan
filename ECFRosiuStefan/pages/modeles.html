@@ -1,0 +1,64 @@
+<div class="d-flex justify-content-between align-items-center mb-3">
+  <h5 class="section-title mb-0">Gestion des Modèles</h5>
+  <span class="text-muted small"
+    >Modifie ou supprime une ligne. Formulaire pour créer / éditer.</span
+  >
+</div>
+
+<div class="panel mb-4">
+  <div class="row fw-semibold border-bottom pb-2 m-0">
+    <div class="col-8">Modèle</div>
+    <div class="col-4 text-end">Actions</div>
+  </div>
+  <div id="listModeles" class="card-slab"><!-- lignes injectées --></div>
+</div>
+
+<div class="panel p-4">
+  <h6 class="mb-3">Créer / Modifier un modèle</h6>
+  <form id="formModele" class="row g-3">
+    <div class="col-md-6">
+      <label class="form-label">Modèle véhicule</label>
+      <input
+        id="mo_modele"
+        class="form-control"
+        maxlength="50"
+        placeholder="Ex: Clio 2"
+        required
+      />
+      <div class="form-text">
+        Clé primaire — évite de la changer en modification.
+      </div>
+    </div>
+    <div class="col-md-6">
+      <label class="form-label">Marque</label>
+      <input
+        id="mo_marque"
+        class="form-control"
+        maxlength="50"
+        placeholder="Ex: Renault"
+        required
+      />
+    </div>
+    <div class="col-md-6">
+      <label class="form-label">Année (AAAA)</label>
+      <input
+        id="mo_annee"
+        class="form-control"
+        maxlength="4"
+        placeholder="2021"
+        required
+      />
+    </div>
+    <div class="col-md-6">
+      <label class="form-label">Date d'achat</label>
+      <input id="mo_achat" type="date" class="form-control" required />
+    </div>
+    <div class="col-12">
+      <button class="btn btn-edit" type="submit">💾 Enregistrer</button>
+      <button class="btn btn-secondary ms-2" type="button" id="btnModeleReset">
+        Nouveau
+      </button>
+      <span id="msgModele" class="small text-muted ms-3"></span>
+    </div>
+  </form>
+</div>

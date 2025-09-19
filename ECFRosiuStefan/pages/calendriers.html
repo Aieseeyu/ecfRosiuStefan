@@ -1,0 +1,52 @@
+<div class="d-flex justify-content-between align-items-center mb-3">
+  <h5 class="section-title mb-0">Gestion du Calendrier</h5>
+  <div class="d-flex align-items-center gap-2">
+    <select id="c_month" class="form-select form-select-sm" style="width: auto">
+      <option value="">Tous les mois</option>
+      <option value="1">Janvier</option>
+      <option value="2">Février</option>
+      <option value="3">Mars</option>
+      <option value="4">Avril</option>
+      <option value="5">Mai</option>
+      <option value="6">Juin</option>
+      <option value="7">Juillet</option>
+      <option value="8">Août</option>
+      <option value="9">Septembre</option>
+      <option value="10">Octobre</option>
+      <option value="11">Novembre</option>
+      <option value="12">Décembre</option>
+    </select>
+
+    <select id="c_year" class="form-select form-select-sm" style="width: auto">
+      <option value="">Toutes les années</option>
+      <!-- options année injectées par JS -->
+    </select>
+
+    <button id="c_reset" class="btn btn-sm btn-secondary">Réinitialiser</button>
+  </div>
+</div>
+
+<div class="panel mb-4">
+  <div class="row fw-semibold border-bottom pb-2 m-0">
+    <div class="col-8">Date</div>
+    <div class="col-4 text-end">Actions</div>
+  </div>
+  <div id="listCalendriers" class="card-slab"><!-- lignes injectées --></div>
+</div>
+
+<div class="panel p-4">
+  <h6 class="mb-3">Ajouter une date</h6>
+  <form id="formCalendrier" class="row g-3">
+    <div class="col-md-6">
+      <label class="form-label">Date</label>
+      <input id="c_date" type="date" class="form-control" required />
+    </div>
+    <div class="col-12">
+      <button class="btn btn-edit" type="submit">➕ Ajouter</button>
+      <button class="btn btn-secondary ms-2" type="button" id="btnCalReset">
+        Réinitialiser
+      </button>
+      <span id="msgCal" class="small text-muted ms-3"></span>
+    </div>
+  </form>
+</div>

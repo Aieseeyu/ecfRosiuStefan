@@ -1,0 +1,62 @@
+<div class="d-flex justify-content-between align-items-center mb-3">
+  <h5 class="section-title mb-0">Gestion des Moniteurs</h5>
+  <span class="text-muted small"
+    >Modifie ou supprime une ligne. Utilise le formulaire pour créer /
+    éditer.</span
+  >
+</div>
+
+<div class="panel mb-4">
+  <div class="row fw-semibold border-bottom pb-2 m-0">
+    <div class="col-8">Moniteur</div>
+    <div class="col-4 text-end">Actions</div>
+  </div>
+  <div id="listMoniteurs" class="card-slab"><!-- lignes injectées --></div>
+</div>
+
+<div class="panel p-4">
+  <h6 class="mb-3">Créer / Modifier un moniteur</h6>
+  <form id="formMoniteur" class="row g-3">
+    <div class="col-md-3">
+      <label class="form-label">ID Moniteur</label>
+      <input id="m_id" type="number" min="1" class="form-control" required />
+    </div>
+    <div class="col-md-4">
+      <label class="form-label">Nom</label>
+      <input id="m_nom" class="form-control" maxlength="50" required />
+    </div>
+    <div class="col-md-5">
+      <label class="form-label">Prénom</label>
+      <input id="m_prenom" class="form-control" maxlength="50" required />
+    </div>
+
+    <div class="col-md-6">
+      <label class="form-label">Date de naissance</label>
+      <input id="m_naiss" type="date" class="form-control" required />
+    </div>
+    <div class="col-md-6">
+      <label class="form-label">Date d'embauche</label>
+      <input id="m_embauche" type="date" class="form-control" required />
+    </div>
+
+    <div class="col-md-3">
+      <label class="form-label d-block">Activité</label>
+      <div class="form-check form-switch">
+        <input id="m_actif" class="form-check-input" type="checkbox" />
+        <label class="form-check-label" for="m_actif">Actif</label>
+      </div>
+    </div>
+
+    <div class="col-12">
+      <button class="btn btn-edit" type="submit">💾 Enregistrer</button>
+      <button
+        class="btn btn-secondary ms-2"
+        type="button"
+        id="btnMoniteurReset"
+      >
+        Nouveau
+      </button>
+      <span id="msgMoniteur" class="small text-muted ms-3"></span>
+    </div>
+  </form>
+</div>

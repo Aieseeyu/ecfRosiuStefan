@@ -1,0 +1,58 @@
+<div class="d-flex justify-content-between align-items-center mb-3">
+  <h5 class="section-title mb-0">Gestion des Élèves</h5>
+  <span class="text-muted small"
+    >Modifie une ligne ou supprime-la. Utilise le formulaire pour créer /
+    éditer.</span
+  >
+</div>
+
+<div class="panel mb-4">
+  <div class="row fw-semibold border-bottom pb-2 m-0">
+    <div class="col-8">Élève</div>
+    <div class="col-4 text-end">Actions</div>
+  </div>
+  <div id="listEleves" class="card-slab"><!-- lignes injectées --></div>
+</div>
+
+<div class="panel p-4">
+  <h6 class="mb-3">Créer / Modifier un élève</h6>
+  <form id="formEleve" class="row g-3">
+    <div class="col-md-3">
+      <label class="form-label">ID Élève</label>
+      <input id="e_id" type="number" min="1" class="form-control" required />
+    </div>
+    <div class="col-md-4">
+      <label class="form-label">Nom</label>
+      <input id="e_nom" class="form-control" maxlength="50" required />
+    </div>
+    <div class="col-md-5">
+      <label class="form-label">Prénom</label>
+      <input id="e_prenom" class="form-control" maxlength="50" required />
+    </div>
+    <div class="col-md-3">
+      <label class="form-label d-block">Code</label>
+      <div class="form-check form-switch">
+        <input id="e_code" class="form-check-input" type="checkbox" />
+        <label class="form-check-label" for="e_code">A le code</label>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <label class="form-label d-block">Conduite</label>
+      <div class="form-check form-switch">
+        <input id="e_conduite" class="form-check-input" type="checkbox" />
+        <label class="form-check-label" for="e_conduite">En conduite</label>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <label class="form-label">Date de naissance</label>
+      <input id="e_naiss" type="date" class="form-control" required />
+    </div>
+    <div class="col-12">
+      <button class="btn btn-edit" type="submit">💾 Enregistrer</button>
+      <button class="btn btn-secondary ms-2" type="button" id="btnEleveReset">
+        Nouveau
+      </button>
+      <span id="msgEleve" class="small text-muted ms-3"></span>
+    </div>
+  </form>
+</div>
